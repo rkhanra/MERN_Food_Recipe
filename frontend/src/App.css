@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Permanent+Marker&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-family: "Lora", serif;
+  background:rgb(233,227,213);
+}
+.moreaboutbody {
+  background: #e8e8e8;
+}
+.food {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+.moreaboutheader {
+  background: #ffeca1;
+}
+.scroll-transition {
+  scroll-behavior: smooth;
+}
+.light {
+  --bg-color: white;
+  --text-color: black;
+}
+
+.dark {
+  --bg-color: black;
+  --text-color: white;
+}
+.header, .footer, .content, .nav, .profile, .login, .sign {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
