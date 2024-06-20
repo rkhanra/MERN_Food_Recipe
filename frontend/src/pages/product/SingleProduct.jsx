@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
@@ -11,7 +11,10 @@ const SingleProduct = () => {
   const [comment, setComment] = useState({ user: "", comment: "" });
   const [error, setError] = useState("");
   const userId = "some-unique-user-id"; // Replace with actual user id
-
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   const openDialog = () => setIsDialogOpen(true);
   const closeDialog = () => {
     setError("");
